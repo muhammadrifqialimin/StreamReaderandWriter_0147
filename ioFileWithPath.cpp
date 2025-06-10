@@ -10,5 +10,13 @@ int main() {
     cin >> NamaFile;
     ofstream outfile;
     outfile.open(NamaFile + ".txt", ios::out);
-    cout << ">= Menulis file \'g\' untuk keluar" << endl;
+    cout << ">= Menulis file \'q\' untuk keluar" << endl;
+    while (true) {
+        cout << "- ";
+        getline(cin, baris);
+        if (baris == "q") break;
+        outfile << baris << endl;
+    }
+
+    outfile.close();
 }
