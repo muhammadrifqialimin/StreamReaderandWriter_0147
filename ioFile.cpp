@@ -25,5 +25,10 @@ int main() {
         {
             cout << baris << '\n';
         }
+
+        infile.close();
     }
+
+    else cout << "Unable to open File";
+    return 0;
 }
